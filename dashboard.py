@@ -19,7 +19,7 @@ class RMS:
 
         # menu---
         m_frame=LabelFrame(self.root, text="Menu",font=("times new roman ",15) ,bg="white")
-        m_frame.place(x=10, y=70, width=1250, height=80)
+        m_frame.place(x=5, y=70, width=1260, height=80)
         # buttons---
         btn_course = Button(m_frame, text="COURSES",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
         btn_course.place(x=20, y=5,width=200,height=40)
