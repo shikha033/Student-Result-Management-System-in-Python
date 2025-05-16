@@ -17,7 +17,7 @@ class RMS:
         title.place(x=0, y=0, relwidth=1, height=50)
 
 
-        # menu---
+        # menu=================
         m_frame=LabelFrame(self.root, text="Menu",font=("times new roman ",15) ,bg="white")
         m_frame.place(x=5, y=70, width=1260, height=80)
         # buttons---
@@ -25,10 +25,6 @@ class RMS:
         btn_course.place(x=20, y=5,width=180,height=40)
         # can be hand1  and others
         btn_student= Button(m_frame, text="STUDENT",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
-        btn_result.place(x=680, y=5,width=200,height=40)
-        btn_logout = Button(m_frame, text="COURSES",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
-        btn_logout.place(x=900, y=5,width=200,height=40)
-        btn_exit = Button(m_frame, text="COURSES",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
         btn_exit.place(x=1120, y=5,width=200,height=40)
 
 if __name__ == "__main__":
