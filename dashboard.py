@@ -29,6 +29,9 @@ class RMS:
         btn_result= Button(m_frame, text="RESULT",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
         btn_result.place(x=420, y=5,width=180,height=40)
         btn_view = Button(m_frame, text="VIEW RESULT",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
+        btn_view.place(x=620, y=5,width=180,height=40)
+        btn_logout = Button(m_frame, text="LOGOUT",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
+        btn_logout.place(x=820, y=5,width=180,height=40)
 
 if __name__ == "__main__":
     root = Tk()
