@@ -37,6 +37,9 @@ class RMS:
 
 
         #==============content=================
+        self.bg_img =Image.open("images/bg2.jpg")
+        self.bg_img = self.bg_img.resize((920, 350), Image.Resampling.LANCZOS)  #  resize image
+        self.bg_bg = ImageTk.PhotoImage(self.bg_img)
 if __name__ == "__main__":
     root = Tk()
     obj = RMS(root)
