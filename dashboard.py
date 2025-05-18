@@ -35,6 +35,8 @@ class RMS:
         btn_exit = Button(m_frame, text="EXIT",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
         btn_exit.place(x=1020, y=5,width=180,height=40)
 
+
+        #==============content=================
 if __name__ == "__main__":
     root = Tk()
     obj = RMS(root)
