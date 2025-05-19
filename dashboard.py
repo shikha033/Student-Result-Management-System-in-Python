@@ -40,6 +40,22 @@ class RMS:
         self.bg_img =Image.open("images/bg2.jpg")
         self.bg_img = self.bg_img.resize((920, 350), Image.Resampling.LANCZOS)  #  resize image
         self.bg_bg = ImageTk.PhotoImage(self.bg_img)
+
+        self_lbl_bg=Label(self.root, image=self.bg_bg)
+        self_lbl_bg.place(x=400, y=180, width=920, height=350)
+
+
+
+
+
+
+
+
+        #==============footer-================
+
+        #footer=Label(self.root, text="SRMS-Student Result Management System\nContact Us for ant Technical Issue: srms.45@gmail.com, 987xxxxx01", font=("goudy old style", 12), bg="#262626", fg="white")
+        #footer.pack(side=BOTTOM,fill=X)
+        footer=Label(self.root, text="© 2025 Student Result Management System | Developed by Shikha", font=("goudy old style", 12), bg="#262626", fg="white")
 if __name__ == "__main__":
     root = Tk()
     obj = RMS(root)
