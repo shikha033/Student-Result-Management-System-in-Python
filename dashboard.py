@@ -56,6 +56,12 @@ class RMS:
         #footer=Label(self.root, text="SRMS-Student Result Management System\nContact Us for ant Technical Issue: srms.45@gmail.com, 987xxxxx01", font=("goudy old style", 12), bg="#262626", fg="white")
         #footer.pack(side=BOTTOM,fill=X)
         footer=Label(self.root, text="© 2025 Student Result Management System | Developed by Shikha", font=("goudy old style", 12), bg="#262626", fg="white")
+        footer.pack(side=BOTTOM,fill=X,  ipady=10) # ipady=10 adds padding inside the widget
+         
+        '''
+        footer = Frame(root, bg="#222222", height=30)
+        footer.pack(side="bottom", fill="x")
+
 if __name__ == "__main__":
     root = Tk()
     obj = RMS(root)
