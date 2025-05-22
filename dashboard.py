@@ -62,7 +62,17 @@ class RMS:
         footer = Frame(root, bg="#222222", height=30)
         footer.pack(side="bottom", fill="x")
 
+        # Footer Label
+        footer_label = Label(footer,text="© 2025 Student Result Management System | Developed by Your Name",
+                 fg="white",
+             bg="#222222",
+                 font=("Arial", 10))
+        footer_label.pack(pady=5)'''
+
+ 
+
 if __name__ == "__main__":
+
     root = Tk()
     obj = RMS(root)
     root.mainloop()
