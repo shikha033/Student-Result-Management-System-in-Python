@@ -38,7 +38,7 @@ class RMS:
 
         #==============content=================
         self.bg_img =Image.open("images/bg2.jpg")
-        self.bg_img = self.bg_img.resize((920, 350), Image.Resampling.LANCZOS)  #  resize image
+        self.bg_img = self.bg_img.resize((800, 300), Image.Resampling.LANCZOS)  #  resize image
         self.bg_bg = ImageTk.PhotoImage(self.bg_img)
 
         self_lbl_bg=Label(self.root, image=self.bg_bg)
