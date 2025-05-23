@@ -42,7 +42,7 @@ class RMS:
         self.bg_bg = ImageTk.PhotoImage(self.bg_img)
 
         self_lbl_bg=Label(self.root, image=self.bg_bg)
-        self_lbl_bg.place(x=400, y=180, width=920, height=350)
+        self_lbl_bg.place(x=400, y=180, width=800, height=300)
 
 
 
