@@ -52,6 +52,8 @@ class RMS:
         self.lbl_student=Label(self.root, text="Total Students\n[0]", font=("goudy old style", 20), bg="#0676ad",fg="white", bd=10,relief=RIDGE)
         self.lbl_student.place(x=670, y=500, width=200, height=100)    
 
+        self.lbl_result=Label(self.root, text="Total Results\n[0]", font=("goudy old style", 20), bg="#038074",fg="white", bd=10,relief=RIDGE)
+        self.lbl_result.place(x=890, y=500, width=200, height=100)    
 
 
 
