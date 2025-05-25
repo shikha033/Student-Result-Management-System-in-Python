@@ -48,6 +48,9 @@ class RMS:
         #========update_details=======
         self.lbl_course=Label(self.root, text="Total Courses\n[0]", font=("goudy old style", 20), bg="#e43b06",fg="white", bd=10,relief=RIDGE)
         self.lbl_course.place(x=450, y=500, width=200, height=100)    
+        
+        self.lbl_student=Label(self.root, text="Total Students\n[0]", font=("goudy old style", 20), bg="#0676ad",fg="white", bd=10,relief=RIDGE)
+        self.lbl_student.place(x=670, y=500, width=200, height=100)    
 
 
 
