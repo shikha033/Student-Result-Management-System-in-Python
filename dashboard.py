@@ -13,7 +13,7 @@ class RMS:
         self.logo_dash = ImageTk.PhotoImage(file="images/logo_ch.png")
 
         # title--  
-        title = Label(self.root, text="Student Result Managment System",padx=10,compound=LEFT,image=self.logo_dash , bg = "#033054", fg="white", font=("goudy old style ", 20, "bold"))
+        title = Label(self.root, text="Student Result Managment System",padx=10,compound=LEFT,image=self.logo_dash , bg = "#033054", fg="white", font=("goudy old style", 20, "bold"))
         title.place(x=0, y=0, relwidth=1, height=50)
 
 
