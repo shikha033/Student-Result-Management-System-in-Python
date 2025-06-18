@@ -18,7 +18,7 @@ class RMS:
 
 
         # menu=================
-        m_frame=LabelFrame(self.root, text="Menu",font=("times new roman ",15) ,bg="white")
+        m_frame=LabelFrame(self.root, text="Menu",font=("times new roman",15) ,bg="white")
         m_frame.place(x=5, y=70, width=1260, height=80)
         # buttons---
         btn_course = Button(m_frame, text="COURSES",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
@@ -59,12 +59,13 @@ class RMS:
 
 
 
+
         #==============footer-================
 
         #footer=Label(self.root, text="SRMS-Student Result Management System\nContact Us for ant Technical Issue: srms.45@gmail.com, 987xxxxx01", font=("goudy old style", 12), bg="#262626", fg="white")
         #footer.pack(side=BOTTOM,fill=X)
         footer=Label(self.root, text="© 2025 Student Result Management System | Developed by Shikha", font=("goudy old style", 12), bg="#262626", fg="white")
-        footer.pack(side=BOTTOM,fill=X,  ipady=10) # ipady=10 adds padding inside the widget
+        footer.pack(side=BOTTOM,fill=X,  ipady=5) # ipady=10 adds padding inside the widget
          
         '''
         footer = Frame(root, bg="#222222", height=30)
