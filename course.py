@@ -8,6 +8,11 @@ class CourseClass:
         self.root.title("Student Result Managment System")
         self.root.geometry("1200x480+80+170")
         self.root.config(bg="white")
+        self.root.focus_force() 
+
+
+
+
 if __name__ == "__main__":
 
     root = Tk()
