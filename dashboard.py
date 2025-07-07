@@ -1,7 +1,6 @@
 from tkinter import *
-
 from PIL import Image, ImageTk  
-
+from course import CourseClass
 class RMS:
     def __init__(self, root):
         self.root = root
