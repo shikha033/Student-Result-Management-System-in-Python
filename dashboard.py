@@ -5,7 +5,7 @@ class RMS:
     def __init__(self, root):
         self.root = root
         self.root.title("Student Result Managment System")
-        self.root.geometry("1350x700+0+0")
+        self.root.geometry("1380x700+0+0")
         self.root.config(bg="white")
 
         # icons---
@@ -20,7 +20,7 @@ class RMS:
         m_frame=LabelFrame(self.root, text="Menu",font=("times new roman",15) ,bg="white")
         m_frame.place(x=5, y=70, width=1260, height=80)
         # buttons---
-        btn_course = Button(m_frame, text="COURSES",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
+        btn_course = Button(m_frame, text="COURSES",cursor="hand2", command=self.add_course,width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
         btn_course.place(x=20, y=5,width=180,height=40)
         # can be hand1  and others
         btn_student= Button(m_frame, text="STUDENT",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
