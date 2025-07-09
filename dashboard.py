@@ -77,10 +77,11 @@ class RMS:
                  font=("Arial", 10))
         footer_label.pack(pady=5)'''
 
- 
+    def add_course(self):
+        self.new_win=Toplevel(self.root)
+        self.new_obj= CourseClass(self.new_win )
 
 if __name__ == "__main__":
-
     root = Tk()
     obj = RMS(root)
     root.mainloop()
