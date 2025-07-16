@@ -14,6 +14,11 @@ class CourseClass:
         title = Label(self.root, text="Manage Course Details", bg = "#033054", fg="white", font=("goudy old style", 20, "bold"))
         title.place(x=10, y=15, width=1250, height=35)
 
+         #===variables=======
+        self.var_courseName = StringVar()
+        self.var_duration = StringVar()
+        self.var_charges = StringVar()
+     
 
 
 if __name__ == "__main__":
