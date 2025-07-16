@@ -10,6 +10,9 @@ class CourseClass:
         self.root.config(bg="white")
         self.root.focus_force() 
 
+         # title--  
+        title = Label(self.root, text="Manage Course Details", bg = "#033054", fg="white", font=("goudy old style", 20, "bold"))
+        title.place(x=10, y=15, width=1250, height=35)
 
 
 
