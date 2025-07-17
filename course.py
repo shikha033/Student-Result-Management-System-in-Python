@@ -26,6 +26,14 @@ class CourseClass:
         lbl_duration=Label(self.root, text="Duration", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=100)
         lbl_charges=Label(self.root, text="Charges", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=140)
         lbl_description=Label(self.root, text="Description", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=180)
+
+        # entries
+        self.txt_courseName=Entry(self.root, textvariable=self.var_courseName, font=("goudy old style", 15, 'bold'), bg='lightyellow')
+        self.txt_courseName.place(x=150, y=60, width=200)
+        txt_duration=Entry(self.root, textvariable=self.var_duration, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=150, y=100, width=200)
+
+        txt_charges=Entry(self.root, textvariable=self.var_charges, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=150, y=140, width=200)
+        self.txt_description=Text(self.root, font=("goudy old style", 15, 'bold'), bg='lightyellow')
 if __name__ == "__main__":
 
     root = Tk()
