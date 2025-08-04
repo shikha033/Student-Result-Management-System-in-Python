@@ -34,6 +34,11 @@ class CourseClass:
 
         txt_charges=Entry(self.root, textvariable=self.var_charges, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=150, y=140, width=200)
         self.txt_description=Text(self.root, font=("goudy old style", 15, 'bold'), bg='lightyellow')
+        self.txt_description.place(x=150, y=180,width=400, height=150)
+
+        # buttons==============
+        self.btn_add=Button(self.root,text='Save', font=("goudy old style", 15, "bold"), bg="#2196f3", fg="white", cursor="hand2")
+        self.btn_add.place(x=150, y=400, width=110,height=40)
 if __name__ == "__main__":
 
     root = Tk()
