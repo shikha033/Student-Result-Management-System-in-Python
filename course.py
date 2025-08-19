@@ -45,6 +45,10 @@ class CourseClass:
         self.btn_delete.place( x = 390 ,y=400, width=110,height=40)
         self.btn_clear=Button(self.root, text='Clear', font=("goudy old style", 15, "bold"), bg="#607d8b",fg="white", cursor="hand2")
         self.btn_clear.place( x = 510 , y = 400, width=110,height=40)
+
+         #===Search Panel============
+        self.var_search= StringVar()
+        lbl_search_courseName=Label(self.root, text="Search By | Course Name", font=("goudy old style", 15, 'bold'), bg='white').place(x=720, y=60)
 if __name__ == "__main__":
 
     root = Tk()
