@@ -49,6 +49,9 @@ class CourseClass:
          #===Search Panel============
         self.var_search= StringVar()
         lbl_search_courseName=Label(self.root, text="Search By | Course Name", font=("goudy old style", 15, 'bold'), bg='white').place(x=720, y=60)
+        txt_search_courseName=Entry(self.root, textvariable=self.var_search, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=950, y=60, width=180)
+        btn_search=Button(self.root,text='Search', font=("goudy old style", 15, "bold"), bg="#03a9f4", fg="white", cursor="hand2")
+        btn_search.place(x=1150, y=60, width=110,height= 30)
 if __name__ == "__main__":
 
     root = Tk()
