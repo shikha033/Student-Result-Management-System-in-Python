@@ -52,6 +52,17 @@ class CourseClass:
         txt_search_courseName=Entry(self.root, textvariable=self.var_search, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=950, y=60, width=180)
         btn_search=Button(self.root,text='Search', font=("goudy old style", 15, "bold"), bg="#03a9f4", fg="white", cursor="hand2")
         btn_search.place(x=1150, y=60, width=110,height= 30)
+
+
+      #=====content========
+        self.C_Frame=Frame(self.root, bd = 2, relief=RIDGE)
+        self.C_Frame.place(x = 720 , y = 100 ,width=470, height=340)    
+
+
+
+
+
+
 if __name__ == "__main__":
 
     root = Tk()
