@@ -58,6 +58,11 @@ class CourseClass:
       #=====content========
         self.C_Frame=Frame(self.root, bd = 2, relief=RIDGE)
         self.C_Frame.place(x = 720 , y = 100 ,width=470, height=340) 
+           
+        scrolly=Scrollbar(self.C_Frame, orient=VERTICAL)
+        scrollx=Scrollbar(self.C_Frame, orient=HORIZONTAL)
+        
+        
         self.CourseTable=ttk.Treeview(self.C_Frame, columns=("cid", "name", "duration", "charges", "description"),xscrollcommand=scrollx.set, yscrollcommand=scrolly.set )
 
 if __name__ == "__main__":
