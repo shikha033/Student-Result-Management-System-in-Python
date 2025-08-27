@@ -64,6 +64,10 @@ class CourseClass:
         
         
         self.CourseTable=ttk.Treeview(self.C_Frame, columns=("cid", "name", "duration", "charges", "description"),xscrollcommand=scrollx.set, yscrollcommand=scrolly.set )
+        scrollx.pack(side=BOTTOM, fill=X) 
+        scrolly.pack(side=RIGHT, fill=Y)
+        scrollx.config(command=self.CourseTable.xview)
+        scrolly.config(command=self.CourseTable.yview)
 
 if __name__ == "__main__":
 
