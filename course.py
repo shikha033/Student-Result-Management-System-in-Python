@@ -73,6 +73,8 @@ class CourseClass:
         self.CourseTable.heading("name", text="Course Name")
         self.CourseTable.heading("duration", text="Duration")
         self.CourseTable.heading("charges", text="Charges")
+        self.CourseTable.heading("description", text="Description")
+        self.CourseTable["show"]="headings" # otherwise one extra empty column will be there
 if __name__ == "__main__":
 
     root = Tk()
