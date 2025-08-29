@@ -71,6 +71,8 @@ class CourseClass:
 
         self.CourseTable.heading("cid", text="Course ID" )
         self.CourseTable.heading("name", text="Course Name")
+        self.CourseTable.heading("duration", text="Duration")
+        self.CourseTable.heading("charges", text="Charges")
 if __name__ == "__main__":
 
     root = Tk()
