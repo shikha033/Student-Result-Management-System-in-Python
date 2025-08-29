@@ -69,6 +69,8 @@ class CourseClass:
         scrollx.config(command=self.CourseTable.xview)
         scrolly.config(command=self.CourseTable.yview)
 
+        self.CourseTable.heading("cid", text="Course ID" )
+        self.CourseTable.heading("name", text="Course Name")
 if __name__ == "__main__":
 
     root = Tk()
