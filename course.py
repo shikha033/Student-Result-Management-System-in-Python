@@ -79,6 +79,10 @@ class CourseClass:
         self.CourseTable.column("name", width=100)
         self.CourseTable.column("duration", width=100)
         self.CourseTable.column("charges", width=100)
+        self.CourseTable.column("description", width=100)
+           
+        self.CourseTable.pack(fill=BOTH, expand=1)
+
 if __name__ == "__main__":
 
     root = Tk()
