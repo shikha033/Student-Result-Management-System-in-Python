@@ -82,6 +82,16 @@ class CourseClass:
         self.CourseTable.column("description", width=100)
            
         self.CourseTable.pack(fill=BOTH, expand=1)
+        #=======================
+    def add(self):
+      con=sqlite3.connect(database="rms.db")
+      cur=con.cursor()
+      try:
+        if self.var_course.get()=="":
+          messagebox.showerror("Error", "Course Name must be required", parent=self.root)
+          return
+        else:
+          pass
 
 if __name__ == "__main__":
 
