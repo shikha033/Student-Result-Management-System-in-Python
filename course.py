@@ -1,5 +1,7 @@
 from tkinter import *
-from tkinter import ttk
+from tkinter import ttk , messagebox
+import sqlite3 
+
 
 from PIL import Image, ImageTk  
 
@@ -38,7 +40,7 @@ class CourseClass:
         self.txt_description.place(x=150, y=180,width=400, height=150)
 
         # buttons==============
-        self.btn_add=Button(self.root,text='Save', font=("goudy old style", 15, "bold"), bg="#2196f3", fg="white", cursor="hand2")
+        self.btn_add=Button(self.root,text='Save', font=("goudy old style", 15, "bold"), bg="#2196f3", fg="white", cursor="hand2" , command=self.add)
         self.btn_add.place(x=150, y=400, width=110,height=40)
         self.btn_update=Button(self.root,text='Update', font=("goudy old style", 15, "bold"), bg="#4caf50",fg="white", cursor="hand2")
         self.btn_update.place(x=270, y = 400, width=110,height=40)
@@ -92,6 +94,14 @@ class CourseClass:
           return
         else:
           pass
+              
+               
+      except Exception as ex:
+        messagebox.showerror("Error", f"Error due to {str(ex)}")
+      finally:
+        con.close()
+
+
 
 if __name__ == "__main__":
 
