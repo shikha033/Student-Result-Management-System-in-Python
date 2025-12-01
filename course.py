@@ -31,7 +31,7 @@ class CourseClass:
         lbl_description=Label(self.root, text="Description", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=180)
 
         # entries
-        self.txt_courseName=Entry(self.root, textvariable=self.var_courseName, font=("goudy old style", 15, 'bold'), bg='lightyellow')
+        self.txt_courseName=Entry(self.root, textvariable= self.var_course, font=("goudy old style", 15, 'bold'), bg='lightyellow')
         self.txt_courseName.place(x=150, y=60, width=200)
         txt_duration=Entry(self.root, textvariable=self.var_duration, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=150, y=100, width=200)
 
@@ -93,8 +93,10 @@ class CourseClass:
           messagebox.showerror("Error", "Course Name must be required", parent=self.root)
           return
         else:
-          pass
-              
+          cur.execute("INSERT into course (name, duration, charges, description) values(?,?,?,?)",(
+              self.var_course.get(),
+              self.var_duration.get(),
+              self.var_charges.get(),
                
       except Exception as ex:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
