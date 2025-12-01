@@ -97,6 +97,15 @@ class CourseClass:
               self.var_course.get(),
               self.var_duration.get(),
               self.var_charges.get(),
+              self.txt_description.get("1.0", END)
+          ))
+          con.commit()
+          messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
+               
+      except Exception as ex:
+        messagebox.showerror("Error", f"Error due to {str(ex)}")
+      finally:
+        con.close()
                
       except Exception as ex:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
