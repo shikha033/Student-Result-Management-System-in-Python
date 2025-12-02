@@ -109,13 +109,19 @@ class CourseClass:
         
     def show(self):
       con=sqlite3.connect(database="rms.db")
+      cur=con.cursor()
+      try:
+        
+          cur.execute("SELECT * FROM course")
+          rows=cur.fetchall()
+          self.CourseTable.delete(*self.CourseTable.get_children())
+          con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
                
       except Exception as ex:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
       finally:
         con.close()
-
 
 
 if __name__ == "__main__":
