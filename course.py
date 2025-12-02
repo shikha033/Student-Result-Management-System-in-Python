@@ -18,7 +18,7 @@ class CourseClass:
         title.place(x=10, y=15, width=1250, height=35)
 
          #===variables=======
-        self.var_courseName = StringVar()
+        self.var_course = StringVar()
         self.var_duration = StringVar()
         self.var_charges = StringVar()
      
@@ -106,6 +106,10 @@ class CourseClass:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
       finally:
         con.close()
+        
+    def show(self):
+      con=sqlite3.connect(database="rms.db")
+          messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
                
       except Exception as ex:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
