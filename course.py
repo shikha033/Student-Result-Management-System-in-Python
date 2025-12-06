@@ -90,12 +90,8 @@ class CourseClass:
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
       try:
-        else:
-          cur.execute("INSERT into course (name, duration, charges, description) values(?,?,?,?)",(
-              self.var_course.get(),
-              self.var_duration.get(),
-              self.var_charges.get(),
-              self.txt_description.get("1.0", END)
+         if self.var_course.get()=="":
+            messagebox.showerror("Error", "Course Name must be required", parent=self.root)
           ))
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
