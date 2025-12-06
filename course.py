@@ -84,14 +84,12 @@ class CourseClass:
         self.CourseTable.column("description", width=100)
            
         self.CourseTable.pack(fill=BOTH, expand=1)
-        #=======================
+        self.CourseTable.bind("<ButtonRelease-1>", self.get_data)
+        self.show()  
     def add(self):
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
       try:
-        if self.var_course.get()=="":
-          messagebox.showerror("Error", "Course Name must be required", parent=self.root)
-          return
         else:
           cur.execute("INSERT into course (name, duration, charges, description) values(?,?,?,?)",(
               self.var_course.get(),
