@@ -86,6 +86,13 @@ class CourseClass:
         self.CourseTable.pack(fill=BOTH, expand=1)
         self.CourseTable.bind("<ButtonRelease-1>", self.get_data)
         self.show()  
+#==================================================
+    def get_data(self):
+      r=self.CourseTable.focus()
+      content=self.CourseTable.item(r)
+      row=content['values'] 
+      #print(row)
+      self.var_course.set(row[1])
     def add(self):
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
