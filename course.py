@@ -136,7 +136,12 @@ class CourseClass:
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
       try:
+        
+          cur.execute(f"SELECT * FROM course where name LIKE '%{self.var_search.get()}%'")
+          rows=cur.fetchall()
           self.CourseTable.delete(*self.CourseTable.get_children())
+          for row in rows:
+            self.CourseTable.insert('',END, values=row)
                
       except Exception as ex:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
