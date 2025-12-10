@@ -132,6 +132,11 @@ class CourseClass:
           self.CourseTable.delete(*self.CourseTable.get_children())
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
+    def search(self):
+      con=sqlite3.connect(database="rms.db")
+      cur=con.cursor()
+      try:
+          self.CourseTable.delete(*self.CourseTable.get_children())
                
       except Exception as ex:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
