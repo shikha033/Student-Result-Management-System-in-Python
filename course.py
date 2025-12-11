@@ -138,6 +138,9 @@ class CourseClass:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
       finally:
         con.close()
+    def update(self):
+      con=sqlite3.connect(database="rms.db")
+      cur=con.cursor()
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
     def search(self):
