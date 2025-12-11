@@ -135,6 +135,9 @@ class CourseClass:
          
                
       except Exception as ex:
+        messagebox.showerror("Error", f"Error due to {str(ex)}")
+      finally:
+        con.close()
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
     def search(self):
