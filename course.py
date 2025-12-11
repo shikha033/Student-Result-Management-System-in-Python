@@ -130,6 +130,11 @@ class CourseClass:
           cur.execute("SELECT * FROM course")
           rows=cur.fetchall()
           self.CourseTable.delete(*self.CourseTable.get_children())
+          for row in rows:
+            self.CourseTable.insert('',END, values=row)
+         
+               
+      except Exception as ex:
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
     def search(self):
