@@ -90,6 +90,9 @@ class CourseClass:
     def clear(self):
       self.show()
       self.var_course.set("")
+      self.var_duration.set("")
+      self.var_charges.set("")
+      self.var_search.set("")
       r=self.CourseTable.focus()
       content=self.CourseTable.item(r)
       row=content['values'] 
