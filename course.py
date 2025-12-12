@@ -87,7 +87,9 @@ class CourseClass:
         self.CourseTable.bind("<ButtonRelease-1>", self.get_data)
         self.show()  
 #==================================================
-    def get_data(self):
+    def clear(self):
+      self.show()
+      self.var_course.set("")
       r=self.CourseTable.focus()
       content=self.CourseTable.item(r)
       row=content['values'] 
