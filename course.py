@@ -142,7 +142,8 @@ class CourseClass:
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
           con.commit()
-          messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
+          messagebox.showinfo("Success", "Course updated successfully", parent=self.root) 
+          self.show()    
     def search(self):
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
