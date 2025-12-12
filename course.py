@@ -144,6 +144,9 @@ class CourseClass:
           con.commit()
           messagebox.showinfo("Success", "Course updated successfully", parent=self.root) 
           self.show()    
+      except Exception as ex:
+        messagebox.showerror("Error", f"Error due to {str(ex)}")
+     
     def search(self):
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
