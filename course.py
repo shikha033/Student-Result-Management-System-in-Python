@@ -146,6 +146,10 @@ class CourseClass:
     def update(self):
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
+      try:
+         if self.var_course.get()=="":
+            messagebox.showerror("Error", "Course Name must be required", parent=self.root)
+            return
           con.commit()
           messagebox.showinfo("Success", "Course updated successfully", parent=self.root) 
           self.show()    
