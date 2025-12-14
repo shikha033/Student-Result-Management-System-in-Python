@@ -150,6 +150,11 @@ class CourseClass:
          if self.var_course.get()=="":
             messagebox.showerror("Error", "Course Name must be required", parent=self.root)
             return
+         else:
+          cur.execute("SELECT * FROM course WHERE name=?",(self.var_course.get(),)  )
+          row=cur.fetchone()
+          if row!=None:
+            messagebox.showerror("Error", "Select Course From List", parent=self.root)
           con.commit()
           messagebox.showinfo("Success", "Course updated successfully", parent=self.root) 
           self.show()    
