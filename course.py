@@ -155,6 +155,14 @@ class CourseClass:
           row=cur.fetchone()
           if row!=None:
             messagebox.showerror("Error", "Select Course From List", parent=self.root)
+          else:
+            cur.execute("UPDATE course  set  duration=? , charges=? , description=? where name=? ",(
+    
+            self.var_duration.get(),
+            self.var_charges.get(),
+            self.txt_description.get("1.0", END),
+            self.var_course.get()
+          ))
           con.commit()
           messagebox.showinfo("Success", "Course updated successfully", parent=self.root) 
           self.show()    
