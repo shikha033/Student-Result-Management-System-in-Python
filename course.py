@@ -93,6 +93,11 @@ class CourseClass:
       self.var_duration.set("")
       self.var_charges.set("")
       self.var_search.set("")
+#Adding event=None solves both:
+#Works with .bind()
+#Works if you call manually
+    def get_data(self, event=None):
+      self.txt_courseName.config(state='readonly')
       r=self.CourseTable.focus()
       content=self.CourseTable.item(r)
       row=content['values'] 
