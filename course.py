@@ -118,6 +118,10 @@ class CourseClass:
           row=cur.fetchone()
           if row!=None:
             messagebox.showerror("Error", "Course already present, try different", parent=self.root)
+          else:
+            cur.execute("INSERT into course (name, duration, charges, description) values(?,?,?,?)",(
+            self.var_course.get(),
+            self.var_duration.get(),
           ))
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
