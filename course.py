@@ -93,6 +93,8 @@ class CourseClass:
       self.var_duration.set("")
       self.var_charges.set("")
       self.var_search.set("")
+      self.txt_description.delete("1.0", END)
+      self.txt_courseName.config(state=NORMAL)
 #Adding event=None solves both:
 #Works with .bind()
 #Works if you call manually
