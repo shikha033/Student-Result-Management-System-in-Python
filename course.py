@@ -99,6 +99,10 @@ class CourseClass:
     def delete(self): 
       con = sqlite3.connect(database="rms.db")
       cur = con.cursor()
+      try:
+        if self.var_course.get() == "":
+            messagebox.showerror("Error", "Course Name must be required", parent=self.root)
+            return
 #Adding event=None solves both:
 #Works with .bind()
 #Works if you call manually
