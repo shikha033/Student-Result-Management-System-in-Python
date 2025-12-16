@@ -95,6 +95,10 @@ class CourseClass:
       self.var_search.set("")
       self.txt_description.delete("1.0", END)
       self.txt_courseName.config(state=NORMAL)
+    
+    def delete(self): 
+      con = sqlite3.connect(database="rms.db")
+      cur = con.cursor()
 #Adding event=None solves both:
 #Works with .bind()
 #Works if you call manually
