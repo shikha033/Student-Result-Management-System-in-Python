@@ -107,6 +107,10 @@ class CourseClass:
             cur.execute("SELECT * FROM course WHERE name=?", (self.var_course.get(),))
             row = cur.fetchone()
             
+            if row is None:
+                messagebox.showerror("Error", "Please select a valid course from the list", parent=self.root)
+            else:
+                op = messagebox.askyesno("Confirm", "Do you really want to delete?", parent=self.root)
 #Adding event=None solves both:
 #Works with .bind()
 #Works if you call manually
