@@ -111,6 +111,11 @@ class CourseClass:
                 messagebox.showerror("Error", "Please select a valid course from the list", parent=self.root)
             else:
                 op = messagebox.askyesno("Confirm", "Do you really want to delete?", parent=self.root)
+                if op:
+                    cur.execute("DELETE FROM course WHERE name=?", (self.var_course.get(),))
+                    con.commit()
+                    messagebox.showinfo("Delete", "Course deleted successfully", parent=self.root)
+                    self.clear()
 #Adding event=None solves both:
 #Works with .bind()
 #Works if you call manually
