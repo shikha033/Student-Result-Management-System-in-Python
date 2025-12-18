@@ -150,10 +150,12 @@ class CourseClass:
             cur.execute("INSERT into course (name, duration, charges, description) values(?,?,?,?)",(
             self.var_course.get(),
             self.var_duration.get(),
+            self.var_charges.get(),
+            self.txt_description.get("1.0", END)
           ))
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
-               
+          self.show()    
       except Exception as ex:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
       finally:
