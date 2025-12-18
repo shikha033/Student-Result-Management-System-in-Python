@@ -116,6 +116,11 @@ class CourseClass:
                     con.commit()
                     messagebox.showinfo("Delete", "Course deleted successfully", parent=self.root)
                     self.clear()
+
+      except Exception as ex:
+        messagebox.showerror("Error", f"Error due to: {str(ex)}", parent=self.root)
+      finally:
+        con.close()
 #Adding event=None solves both:
 #Works with .bind()
 #Works if you call manually
