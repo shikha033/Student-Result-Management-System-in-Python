@@ -44,7 +44,7 @@ class CourseClass:
         self.btn_add.place(x=150, y=400, width=110,height=40)
         self.btn_update=Button(self.root,text='Update', font=("goudy old style", 15, "bold"), bg="#4caf50",fg="white", cursor="hand2", command=self.update)
         self.btn_update.place(x=270, y = 400, width=110,height=40)
-        self.btn_delete=Button(self.root, text='Delete', font=("goudy old style", 15, "bold"), bg="#f44336", fg="white", cursor="hand2")
+        self.btn_delete=Button(self.root, text='Delete', font=("goudy old style", 15, "bold"), bg="#f44336", fg="white", cursor="hand2",command=self.delete)
         self.btn_delete.place( x = 390 ,y=400, width=110,height=40)
         self.btn_clear=Button(self.root, text='Clear', font=("goudy old style", 15, "bold"), bg="#607d8b",fg="white", cursor="hand2")
         self.btn_clear.place( x = 510 , y = 400, width=110,height=40)
