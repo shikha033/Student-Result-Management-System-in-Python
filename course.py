@@ -121,6 +121,12 @@ class CourseClass:
         messagebox.showerror("Error", f"Error due to: {str(ex)}", parent=self.root)
       finally:
         con.close()
+
+    
+      
+
+  
+
 #Adding event=None solves both:
 #Works with .bind()
 #Works if you call manually
@@ -165,7 +171,7 @@ class CourseClass:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
       finally:
         con.close()
-        
+      
     def show(self):
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
@@ -182,6 +188,9 @@ class CourseClass:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
       finally:
         con.close()
+
+
+
     def update(self):
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
@@ -218,6 +227,7 @@ class CourseClass:
           self.CourseTable.delete(*self.CourseTable.get_children())
           for row in rows:
             self.CourseTable.insert('',END, values=row)
+         
                
       except Exception as ex:
         messagebox.showerror("Error", f"Error due to {str(ex)}")
