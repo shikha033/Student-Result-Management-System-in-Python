@@ -45,7 +45,7 @@ class StudentClass:
         txt_email=Entry(self.root, textvariable=self.var_email, font=("goudy old style", 15, 'bold'),state='readonly',justify=CENTER).place(x=150, y=140, width=200)
         txt_gender=ttk.Combobox(self.root, textvariable=self.var_gender, values=("Male", "Female", "Other"),font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=150, y=180, width=200)
         self.txt_address=Text(self.root, font=("goudy old style", 15, 'bold'), bg='lightyellow')
-        self.txt_address.place(x=150, y=220,width=400, height=100)
+        self.txt_address.place(x=150, y=260,width=500, height=100)
 
         # buttons==============
         self.btn_add=Button(self.root,text='Save', font=("goudy old style", 15, "bold"), bg="#2196f3", fg="white", cursor="hand2" , command=self.add)
