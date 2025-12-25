@@ -1,6 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk  
 from course import CourseClass
+from student import StudentClass
 class RMS:
     def __init__(self, root):
         self.root = root
@@ -23,7 +24,7 @@ class RMS:
         btn_course = Button(m_frame, text="COURSES",cursor="hand2", command=self.add_course,width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
         btn_course.place(x=20, y=5,width=180,height=40)
         # can be hand1  and others
-        btn_student= Button(m_frame, text="STUDENT",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
+        btn_student= Button(m_frame, text="STUDENT",cursor="hand2", width=20,command=self.add_student, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
         btn_student.place(x=220, y=5,width=180,height=40)
         btn_result= Button(m_frame, text="RESULT",cursor="hand2", width=20, font=("goudy old style", 15,"bold"), bg="#0b5377", fg="white")
         btn_result.place(x=420, y=5,width=180,height=40)
@@ -80,6 +81,11 @@ class RMS:
     def add_course(self):
         self.new_win=Toplevel(self.root)
         self.new_obj= CourseClass(self.new_win )
+    def add_student(self):
+        self.new_win=Toplevel(self.root)
+        self.new_obj= StudentClass(self.new_win )
+
+
 
 if __name__ == "__main__":
     root = Tk()
