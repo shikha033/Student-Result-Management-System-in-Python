@@ -36,6 +36,8 @@ class StudentClass:
         lbl_name=Label(self.root, text="Name", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=100)
         lbl_email=Label(self.root, text="EMail", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=140)
         lbl_gender=Label(self.root, text="Gender", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=180)
+        lbl_state=Label(self.root, text="State", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=220)
+        lbl_address=Label(self.root, text="State", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=220)
 
         # entries
         self.txt_roll=Entry(self.root, textvariable= self.var_roll, font=("goudy old style", 15, 'bold'), bg='lightyellow')
