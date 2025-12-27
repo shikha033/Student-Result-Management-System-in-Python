@@ -38,6 +38,8 @@ class StudentClass:
         lbl_email=Label(self.root, text="EMail", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=140)
         lbl_gender=Label(self.root, text="Gender", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=180)
         lbl_state=Label(self.root, text="State", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=220)
+        
+
         lbl_address=Label(self.root, text="Address", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=260)
         
 
