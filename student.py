@@ -56,6 +56,9 @@ class StudentClass:
         self.txt_gender.current(0)
         lbl_dob=Label(self.root, text="D.O.B.", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=60)
         lbl_contact=Label(self.root, text="Contact", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=100)
+        lbl_admission=Label(self.root, text="Admisssion", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=140)
+        lbl_course=Label(self.root, text="Course", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=180)
+
         self.txt_address=Text(self.root, font=("goudy old style", 15, 'bold'), bg='lightyellow')
         self.txt_address.place(x=150, y=260,width=500, height=100)
 
