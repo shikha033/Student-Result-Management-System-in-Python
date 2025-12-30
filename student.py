@@ -59,6 +59,10 @@ class StudentClass:
         lbl_admission=Label(self.root, text="Admisssion", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=140)
         lbl_course=Label(self.root, text="Course", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=180)
 
+       # entries
+        self.course_list=[]
+        self.txt_dob=Entry(self.root, textvariable= self.var_dob, font=("goudy old style", 15, 'bold'), bg='lightyellow')
+        self.txt_dob.place(x=480, y=60, width=200)
         self.txt_address=Text(self.root, font=("goudy old style", 15, 'bold'), bg='lightyellow')
         self.txt_address.place(x=150, y=260,width=500, height=100)
 
