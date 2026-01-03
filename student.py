@@ -63,6 +63,10 @@ class StudentClass:
         self.course_list=[]
         self.txt_dob=Entry(self.root, textvariable= self.var_dob, font=("goudy old style", 15, 'bold'), bg='lightyellow')
         self.txt_dob.place(x=480, y=60, width=200)
+        txt_contact=Entry(self.root, textvariable=self.var_contact, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=480, y=100, width=200)
+
+        txt_admisssion=Entry(self.root, textvariable=self.var_a_date, font=("goudy old style", 15, 'bold'),state='readonly',justify=CENTER).place(x=480, y=140, width=200)
+        self.txt_course=ttk.Combobox(self.root, textvariable=self.var_course, values=self.course_list,justify=CENTER,font=("goudy old style", 15, 'bold'))
         self.txt_address=Text(self.root, font=("goudy old style", 15, 'bold'), bg='lightyellow')
         self.txt_address.place(x=150, y=260,width=500, height=100)
 
