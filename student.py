@@ -54,6 +54,9 @@ class StudentClass:
         self.txt_gender=ttk.Combobox(self.root, textvariable=self.var_gender, values=("Select","Male", "Female", "Other"),justify=CENTER,font=("goudy old style", 15, 'bold'))
         self.txt_gender.place(x=150, y=180, width=200)
         self.txt_gender.current(0)
+        txt_state=Entry(self.root, textvariable=self.var_state, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=150, y=220, width=150)
+        
+      #=================column2=================
         lbl_dob=Label(self.root, text="D.O.B.", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=60)
         lbl_contact=Label(self.root, text="Contact", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=100)
         lbl_admission=Label(self.root, text="Admisssion", font=("goudy old style", 15, 'bold'), bg='white').place(x=360, y=140)
