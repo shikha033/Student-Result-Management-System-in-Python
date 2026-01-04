@@ -176,9 +176,6 @@ class StudentClass:
       content=self.CourseTable.item(r)
       row=content['values'] 
       #print(row)
-      self.var_course.set(row[1])
-      self.var_duration.set(row[2])
-      self.var_charges.set(row[3])
       self.txt_description.delete("1.0", END)
       self.txt_description.insert(END, row[4])
 
