@@ -176,8 +176,6 @@ class StudentClass:
       content=self.CourseTable.item(r)
       row=content['values'] 
       #print(row)
-      self.txt_description.delete("1.0", END)
-      self.txt_description.insert(END, row[4])
 
 
       
