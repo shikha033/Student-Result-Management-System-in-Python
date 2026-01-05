@@ -179,6 +179,8 @@ class StudentClass:
       self.var_roll.set(row[1])
       self.var_name.set(row[2])
       self.var_email.set(row[3])
+      self.txt_address.delete("1.0", END)
+      self.txt_address.insert(END, row[4])
 
 
       
