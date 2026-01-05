@@ -176,6 +176,9 @@ class StudentClass:
       content=self.CourseTable.item(r)
       row=content['values'] 
       #print(row)
+      self.var_roll.set(row[1])
+      self.var_name.set(row[2])
+      self.var_email.set(row[3])
 
 
       
