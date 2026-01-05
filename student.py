@@ -189,7 +189,7 @@ class StudentClass:
       con=sqlite3.connect(database="rms.db")
       cur=con.cursor()
       try:
-         if self.var_course.get()=="":
+         if self.var_roll.get()=="":
             messagebox.showerror("Error", "Course Name must be required", parent=self.root)
             return
          else:
