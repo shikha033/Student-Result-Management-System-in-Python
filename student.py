@@ -199,8 +199,7 @@ class StudentClass:
             messagebox.showerror("Error", "Course already present, try different", parent=self.root)
           else:
             cur.execute("INSERT into course (name, duration, charges, description) values(?,?,?,?)",(
-            self.var_charges.get(),
-            self.txt_description.get("1.0", END)
+            self.var_roll.get(),
           ))
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
