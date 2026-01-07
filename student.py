@@ -200,6 +200,9 @@ class StudentClass:
           else:
             cur.execute("INSERT into course (name, duration, charges, description) values(?,?,?,?)",(
             self.var_roll.get(),
+            self.var_name.get(),
+            self.var_email.get(),
+            self.txt_address.get("1.0", END)
           ))
           con.commit()
           messagebox.showinfo("Success", "Course added successfully", parent=self.root) 
