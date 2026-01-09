@@ -246,7 +246,8 @@ class StudentClass:
           else:
             cur.execute("UPDATE course  set  duration=? , charges=? , description=? where name=? ",(
     
-            self.var_course.get()
+            self.var_name.get(),
+            self.var_email.get(),
           ))
           con.commit()
           messagebox.showinfo("Success", "Course updated successfully", parent=self.root) 
