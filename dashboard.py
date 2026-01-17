@@ -2,6 +2,7 @@ from tkinter import *
 from PIL import Image, ImageTk  
 from course import CourseClass
 from student import StudentClass
+
 class RMS:
     def __init__(self, root):
         self.root = root
