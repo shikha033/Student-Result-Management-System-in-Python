@@ -40,6 +40,8 @@ class StudentClass:
         lbl_state=Label(self.root, text="State", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=220)
         
 
+
+
         lbl_address=Label(self.root, text="Address", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=260)
         
 
