@@ -70,6 +70,8 @@ class StudentClass:
 
        # entries
         self.course_list=[]
+        #function_call to update the course list
+        con=sqlite3.connect(database="rms.db")
         self.txt_dob=Entry(self.root, textvariable= self.var_dob, font=("goudy old style", 15, 'bold'), bg='lightyellow')
         self.txt_dob.place(x=480, y=60, width=200)
         txt_contact=Entry(self.root, textvariable=self.var_contact, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=480, y=100, width=200)
