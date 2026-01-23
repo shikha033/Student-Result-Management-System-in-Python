@@ -38,10 +38,11 @@ class StudentClass:
         lbl_email=Label(self.root, text="EMail", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=140)
         lbl_gender=Label(self.root, text="Gender", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=180)
         lbl_state=Label(self.root, text="State", font=("goudy old style", 15, 'bold'), bg='white').place(x=10, y=220)
-        
         txt_state=Entry(self.root, textvariable=self.var_state, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=150, y=220, width=150)
         lbl_city=Label(self.root, text="City", font=("goudy old style", 15, 'bold'), bg='white').place(x=300, y=220)
         txt_city=Entry(self.root, textvariable=self.var_city, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=370, y=220, width=100)
+        lbl_pin=Label(self.root, text="Pin", font=("goudy old style", 15, 'bold'), bg='white').place(x=500, y=220)
+        txt_pin=Entry(self.root, textvariable=self.var_pin, font=("goudy old style", 15, 'bold'), bg='lightyellow').place(x=560, y=220, width=120)
 
 
 
