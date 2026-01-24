@@ -79,7 +79,7 @@ class StudentClass:
         txt_admisssion=Entry(self.root, textvariable=self.var_a_date, font=("goudy old style", 15, 'bold'),state='readonly',justify=CENTER).place(x=480, y=140, width=200)
         self.txt_course=ttk.Combobox(self.root, textvariable=self.var_course, values=self.course_list,justify=CENTER,font=("goudy old style", 15, 'bold'))
         self.txt_course.place(x=480, y=180, width=200)
-        self.txt_course.set("Empty")
+        self.txt_course.set("Select the course")
        #=================text address=================
 
 
