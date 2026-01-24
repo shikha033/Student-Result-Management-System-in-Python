@@ -112,7 +112,7 @@ class StudentClass:
         scrollx=Scrollbar(self.C_Frame, orient=HORIZONTAL)
         
         
-        self.CourseTable=ttk.Treeview(self.C_Frame, columns=("cid", "name", "duration", "charges", "description"),xscrollcommand=scrollx.set, yscrollcommand=scrolly.set )
+        self.CourseTable=ttk.Treeview(self.C_Frame, columns=("roll", "name", "email", "gender", "dob", "contact","admission","course" ,"state","city","pin","address"),xscrollcommand=scrollx.set, yscrollcommand=scrolly.set )
         scrollx.pack(side=BOTTOM, fill=X) 
         scrolly.pack(side=RIGHT, fill=Y)
         scrollx.config(command=self.CourseTable.xview)
