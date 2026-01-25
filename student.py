@@ -118,8 +118,6 @@ class StudentClass:
         scrollx.config(command=self.CourseTable.xview)
         scrolly.config(command=self.CourseTable.yview)
 
-        self.CourseTable.heading("cid", text="Course ID" )
-        self.CourseTable.heading("name", text="Course Name")
         self.CourseTable.heading("duration", text="Duration")
         self.CourseTable.heading("charges", text="Charges")
         self.CourseTable.heading("description", text="Description")
