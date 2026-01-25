@@ -118,8 +118,6 @@ class StudentClass:
         scrollx.config(command=self.CourseTable.xview)
         scrolly.config(command=self.CourseTable.yview)
 
-        self.CourseTable.heading("duration", text="Duration")
-        self.CourseTable.heading("charges", text="Charges")
         self.CourseTable.heading("description", text="Description")
         self.CourseTable["show"]="headings" # otherwise one extra empty column will be there
         self.CourseTable.column("cid", width=100)
