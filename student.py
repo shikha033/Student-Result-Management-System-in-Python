@@ -119,6 +119,8 @@ class StudentClass:
         scrolly.config(command=self.CourseTable.yview)
 
         self.CourseTable.heading("roll", text="Roll No")
+        self.CourseTable.heading("name", text="Name")
+        self.CourseTable.heading("email", text="Email")
         self.CourseTable["show"]="headings" # otherwise one extra empty column will be there
         self.CourseTable.column("cid", width=100)
         self.CourseTable.column("name", width=100)
