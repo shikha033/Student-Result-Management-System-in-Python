@@ -123,6 +123,8 @@ class StudentClass:
         self.CourseTable.heading("email", text="Email")
         self.CourseTable.heading("gender", text="Gender")
         self.CourseTable.heading("dob", text="D.O.B")
+        self.CourseTable.heading("contact", text="Contact")
+        self.CourseTable.heading("admission", text="Admission Date")
         self.CourseTable["show"]="headings" # otherwise one extra empty column will be there
         self.CourseTable.column("cid", width=100)
         self.CourseTable.column("name", width=100)
