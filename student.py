@@ -110,8 +110,8 @@ class StudentClass:
            
         scrolly=Scrollbar(self.C_Frame, orient=VERTICAL)
         scrollx=Scrollbar(self.C_Frame, orient=HORIZONTAL)
-        
-        
+
+
         self.CourseTable=ttk.Treeview(self.C_Frame, columns=("roll", "name", "email", "gender", "dob", "contact","admission","course" ,"state","city","pin","address"),xscrollcommand=scrollx.set, yscrollcommand=scrolly.set )
         scrollx.pack(side=BOTTOM, fill=X) 
         scrolly.pack(side=RIGHT, fill=Y)
@@ -125,6 +125,8 @@ class StudentClass:
         self.CourseTable.heading("dob", text="D.O.B")
         self.CourseTable.heading("contact", text="Contact")
         self.CourseTable.heading("admission", text="Admission Date")
+        self.CourseTable.heading("course", text="Course")
+        self.CourseTable.heading("state", text="State")
         self.CourseTable["show"]="headings" # otherwise one extra empty column will be there
         self.CourseTable.column("cid", width=100)
         self.CourseTable.column("name", width=100)
