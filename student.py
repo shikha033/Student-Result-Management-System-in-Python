@@ -127,6 +127,9 @@ class StudentClass:
         self.CourseTable.heading("admission", text="Admission Date")
         self.CourseTable.heading("course", text="Course")
         self.CourseTable.heading("state", text="State")
+        self.CourseTable.heading("city", text="City")
+        self.CourseTable.heading("pin", text="Pin Code")
+        self.CourseTable.heading("address", text="Address")
         self.CourseTable["show"]="headings" # otherwise one extra empty column will be there
         self.CourseTable.column("cid", width=100)
         self.CourseTable.column("name", width=100)
