@@ -130,8 +130,9 @@ class StudentClass:
         self.CourseTable.heading("city", text="City")
         self.CourseTable.heading("pin", text="Pin Code")
         self.CourseTable.heading("address", text="Address")
+
         self.CourseTable["show"]="headings" # otherwise one extra empty column will be there
-        self.CourseTable.column("cid", width=100)
+        self.CourseTable.column("roll", width=100)
         self.CourseTable.column("name", width=100)
         self.CourseTable.column("duration", width=100)
         self.CourseTable.column("charges", width=100)
