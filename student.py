@@ -134,6 +134,8 @@ class StudentClass:
         self.CourseTable["show"]="headings" # otherwise one extra empty column will be there
         self.CourseTable.column("roll", width=100)
         self.CourseTable.column("name", width=100)
+        self.CourseTable.column("email", width=100)
+        self.CourseTable.column("gender", width=100)
         self.CourseTable.pack(fill=BOTH, expand=1)
         self.CourseTable.bind("<ButtonRelease-1>", self.get_data)
         self.show()  
