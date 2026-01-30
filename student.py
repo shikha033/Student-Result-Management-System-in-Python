@@ -138,6 +138,7 @@ class StudentClass:
         self.CourseTable.column("gender", width=100)
         self.CourseTable.column("dob", width=100)
         self.CourseTable.column("contact", width=100)
+        self.CourseTable.column("admission", width=100)
         self.CourseTable.pack(fill=BOTH, expand=1)
         self.CourseTable.bind("<ButtonRelease-1>", self.get_data)
         self.show()  
