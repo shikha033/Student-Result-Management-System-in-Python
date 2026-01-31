@@ -9,6 +9,8 @@ def create_db():
 
     c.execute('''CREATE TABLE IF NOT EXISTS student(
         roll INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT,
+        email TEXT,
     conn.close()
 
 create_db()
