@@ -6,6 +6,9 @@ def create_db():
     c.execute("CREATE TABLE IF NOT EXISTS course(cid INTEGER PRIMARY KEY AUTOINCREMENT, name text, duration text, charges text, description text)")
 
     conn.commit()
+
+    c.execute('''CREATE TABLE IF NOT EXISTS student(
+        roll INTEGER PRIMARY KEY AUTOINCREMENT,
     conn.close()
 
 create_db()
