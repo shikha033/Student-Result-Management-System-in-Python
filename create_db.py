@@ -11,6 +11,13 @@ def create_db():
         roll INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
         email TEXT,
+        gender TEXT,
+        dob TEXT, contact TEXT, admission  TEXT,
+        course TEXT,  state TEXT, city TEXT,
+        pin TEXT, address TEXT
+        )''')        
+    
+    conn.commit()            
     conn.close()
 
 create_db()
